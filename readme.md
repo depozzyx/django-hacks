@@ -6,7 +6,7 @@ This is my repository with all django hacks that I found useful and not very obv
 
 This is an easy(probably the easiest) and native-like method to create statistics pages, specific managment forms or anything you would like directly in your django administration without need for additional models
 
-[How to implement]("./fake_admin/)
+[How to implement](https://github.com/depozzyx/django-hacks/tree/main/fake_admin)
 
 ![Fake admin page demo](./fake_admin/preview.png)
 
@@ -14,7 +14,7 @@ This is an easy(probably the easiest) and native-like method to create statistic
 
 A cool template to display basically any image in model's change form
 
-[How to implement]("./avatar/)
+[How to implement](https://github.com/depozzyx/django-hacks/tree/main/avatar)
 
 ![Avatar demo](./avatar/preview.png)
 
