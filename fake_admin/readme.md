@@ -19,7 +19,7 @@ Note: As you see, we actually need another model, but it is only for technical r
 ```python
 # your_app/admin.py
 @admin.register(FakeBruhModel)
-class FakeDutyAdmin(FakeBruhAdmin):
+class FakeAdmin(FakeBruhAdmin):
     change_list_template = "admin/custom.html"
 
     def changelist_view(self, request, extra_context=None):
@@ -30,8 +30,12 @@ class FakeDutyAdmin(FakeBruhAdmin):
 
 ```html
 <!-- your_app/templates/admin/custom.html -->
-{% extends "admin/base_site.html" %} {% load i18n admin_urls static admin_list
-%} {% block content %}
+{% extends "admin/base_site.html" %}
+<!--  -->
+{% load i18n admin_urls static admin_list %}
+
+<!--  -->
+{% block content %}
 <h1>Hi, this is faked admin page without model!</h1>
 
 <section>
