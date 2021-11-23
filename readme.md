@@ -12,7 +12,7 @@ This is an easy(probably the easiest) and native-like method to create statistic
 
 ## One-button foreign key change
 
-Sometimes there is no need for complex widget for changing foreig key in django admin(that with dropdown, plus sign and change button), so here is a solution:
+Sometimes there is no need for complex widget for changing foreign key in django admin(that with dropdown, plus sign and change button), so here is my solution:
 
 [How to implement](https://github.com/depozzyx/django-hacks/tree/main/one_button_fk)
 
