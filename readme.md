@@ -10,6 +10,14 @@ This is an easy(probably the easiest) and native-like method to create statistic
 
 ![Fake admin page demo](./fake_admin/preview.png)
 
+## One-button foreign key change
+
+Sometimes there is no need for complex widget for changing foreig key in django admin(that with dropdown, plus sign and change button), so here is a solution:
+
+[How to implement](https://github.com/depozzyx/django-hacks/tree/main/one_button_fk)
+
+![One buutton foreign key](./one_button_fk/preview.png)
+
 ## Admin change form avatar / image
 
 A cool template to display basically any image in model's change form

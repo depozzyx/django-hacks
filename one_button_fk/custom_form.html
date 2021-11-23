@@ -1,0 +1,37 @@
+<!-- your_app/templates/admin/custom_form -->
+{% extends "admin/change_form.html" %}
+
+<!--  -->
+{% block after_field_sets %}
+
+<style>
+    .related-widget-wrapper select {
+        display: none;
+    }
+    .related-widget-wrapper a {
+        border: 1px solid #447e9b;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 0;
+        display: inline-block;
+        text-align: center;
+    }
+    #change_id_FOREIGN_KEY_FIELD_NAME {
+        display: none;
+    }
+    #change_id_FOREIGN_KEY_FIELD_NAME[href] {
+        display: inherit;
+    }
+    #change_id_FOREIGN_KEY_FIELD_NAME[href] + #add_id_FOREIGN_KEY_FIELD_NAME {
+        display: none;
+    }
+</style>
+
+<script>
+    document.getElementById("change_id_FOREIGN_KEY_FIELD_NAME").innerHTML =
+        "Open Editor";
+    document.getElementById("add_id_FOREIGN_KEY_FIELD_NAME").innerHTML =
+        "Open Editor";
+</script>
+
+{% endblock %}
